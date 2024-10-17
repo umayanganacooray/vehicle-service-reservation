@@ -20,7 +20,13 @@
   </body>
 	  <script src="../assets/js/bootstrap.bundle.min"></script>
 	  <script src="../assets/js/perfect-scrollbar.min.js"></script>
-  	  <script src="../assets/js/smooth-scrollbar.min.js"></script>
+  	<script src="../assets/js/smooth-scrollbar.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	  <script>
+		  alertify.set('notifier','position', 'top-right');
+		  alertify.success('hELLO wORLD'));
+	  </script>
   
 
 </html>
