@@ -16,8 +16,7 @@
       </div>
     </footer>
   </main>
-  
-  </body>
+
 	  <script src="../assets/js/bootstrap.bundle.min"></script>
 	  <script src="../assets/js/perfect-scrollbar.min.js"></script>
   	<script src="../assets/js/smooth-scrollbar.min.js"></script>
@@ -28,5 +27,14 @@
 		  alertify.success('hELLO wORLD'));
 	  </script>
   
+  <script>
+	  <!--???????????????????if session is set only put this
+			  if(session.getAttribute(message)!=null){-->
+		  alertify.set('notifier','position', 'top-right');
+		  alertify.success('display session message');
+		  <!--unset(session(message))-->
+	  </script>
+	  
+	</body>
 
 </html>
