@@ -1,5 +1,7 @@
 <%@include file="includes/header.jsp"%>
 
+<% String username =  (String)request.getSession().getAttribute("username"); %>
+
 <div class="container">
 	<div class="row">
         <div class="col-md-12">
@@ -12,7 +14,9 @@
 	        			<div class="row">
 	        				<div class="col-md-12 mb-3">
 						        <label for="username">Username</label>
-						        <input type="text" name="username" placeholder="Enter username" class="form-control" required>
+								<!-- Display the username as non-editable text -->
+                                <input type="text" name="username" value="<%= username %>" class="form-control" readonly>
+
 						    </div>
 						    <div class="col-md-6 mb-3">
 						        <label for="date">Date</label>
@@ -29,9 +33,31 @@
 						    <div class="col-md-12 mb-3">
 						        <label for="location">Location</label>
 						        <select name="location" class="form-control" required>
+						            <option value="Ampara">Ampara</option>
+						            <option value="Anuradhapura">Anuradhapura</option>
+						            <option value="Badulla">Badulla</option>
+						            <option value="Batticaloa">Batticaloa</option>
 						            <option value="Colombo">Colombo</option>
+						            <option value="Galle">Galle</option>
 						            <option value="Gampaha">Gampaha</option>
-						            <option value="Kalutara">Kalutara</option>					            
+						            <option value="Hambantota">Hambantota</option>
+						            <option value="Jaffna">Jaffna</option>
+						            <option value="Kalutara">Kalutara</option>
+						            <option value="Kandy">Kandy</option>
+						            <option value="Kegalle">Kegalle</option>
+						            <option value="Kilinochchi">Kilinochchi</option>
+						            <option value="Kurunegala">Kurunegala</option>
+						            <option value="Mannar">Mannar</option>
+						            <option value="Matale">Matale</option>
+						            <option value="Matara">Matara</option>
+						            <option value="Monaragala">Monaragala</option>
+						            <option value="Mullaitivu">Mullaitivu</option>
+						            <option value="Nuwara Eliya">Nuwara Eliya</option>
+						            <option value="Polonnaruwa">Polonnaruwa</option>
+						            <option value="Puttalam">Puttalam</option>
+						            <option value="Ratnapura">Ratnapura</option>
+						            <option value="Trincomalee">Trincomalee</option>
+						            <option value="Vavuniya">Vavuniya</option>					            
 						        </select>
 						    </div>  
 						    <div class="col-md-6 mb-3">
